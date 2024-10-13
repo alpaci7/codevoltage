@@ -1,0 +1,48 @@
+
+.maps-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.maps-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.maps-card Button{
+    margin: 8px;
+    width: 70%;
+    height: 80px;
+    padding: 8px;
+    cursor: pointer;
+
+}
+
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+
+@media  screen and (min-width : 1000px) {
+    .maps-field{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .maps-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .maps-card Button{
+        margin: 40px;
+        
+    }
+    
+}

@@ -1,0 +1,45 @@
+.search-field{
+    margin-top : 90px;
+    width: 90%;
+}
+.search-field Form{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--form-background);
+    margin: 40px 8%;
+    padding: 40px 10px;
+}
+
+.subscriptions-container{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: var(--form-background);
+    margin: 50px auto;
+    padding: 10px;
+    border: 1px solid var(--heading-color);
+}
+.subscriptions-container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.count{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 10px auto;
+}
+
+@media screen and (max-width : 500px) {
+    .subscriptions-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
