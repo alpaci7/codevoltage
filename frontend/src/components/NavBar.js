@@ -71,6 +71,7 @@ const NavBar = ({user, checked, setChecked}) => {
                         
                         <div>
                             <li><Link className="link" to={"/search"} onClick={()=>setClicked(false)}>{t('Search')}</Link></li>
+                            <li><Link className="link" to={"/"} onClick={()=>setClicked(false)}>{t("Home")}</Link></li>
                             <li style={{height : "80px"}}><Link className="link1"  onClick={()=>setCoursesClicked(!coursesClicked)}>{t("Courses")}</Link>                           
                                 <div className={coursesClicked ? "show-courses" : "hide-courses"}>
                                    <Link className="link-courses" to={"/courses/robotics"} onClick={()=>{setClicked(false);setCoursesClicked(false);}}> <li>{t('Robotics')}</li></Link>
